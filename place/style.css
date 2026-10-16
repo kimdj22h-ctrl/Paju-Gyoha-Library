@@ -1,0 +1,80 @@
+/* 기본설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    color: darkkhaki;
+    background-color: black;
+}
+
+/* 네 책상은 크기가 같아서 .desk에 크기를 한 번만 쓰고, 
+위치만 .d1 ~ .d4에 따로 작성함. */
+.desk {
+    width: 8.7vw;
+    height: 28.1vh;
+    position: absolute;
+}
+
+.d1 { left: 5.9vw; top: 5.4vh; }
+.d2 { left: 20.6vw; top: 5.4vh;}
+.d3 { left: 5.9vw; top: 66.5vh}
+.d4 { left: 20.6vw; top: 66.5vh;}
+
+/* .person의 border-radius: 50%를 20%로 바꿔 보세요. 
+    10명이 모두 둥근 네모가 돼요. 공통 규칙 한 줄이 10명에게 적용되는 걸 확인할 수 있어요. */
+.person {
+    position: absolute;
+    border-radius: 50%;   
+    aspect-ratio: 1;
+    overflow: hidden; /* 넘치는 글자는 잘라도 됨 -> 상자는 1:1 유지 */
+    font-size: 0.8vw; /* 사람만 글씨 작게 */
+    white-space: nowrap; /* 글자를 한 줄로 */
+}
+
+/* 위쪽 무리 */
+.p1 { left: 1.9vw; top: 7.6vh; width: 3.1vw;}
+.p2 { left: 17.9vw; top: 7.6vh; width: 2.2vw;}
+.p3 { left: 15.1vw; top: 17.6vh; width: 2.2vw;}
+.p4 { left: 29.8vw; top: 18.3vh; width: 2.5vw;}
+.p5 { left: 3.2vw; top: 28.3vh; width: 2.2vw;}
+
+/* 아래쪽 무리 */
+.p6 { left: 17.9vw; top: 67.4vh; width: 2.2vw;}
+.p7 { left: 30vw; top: 76.9vh; width: 3.1vw;}
+.p8 { left: 15.2vw; top: 78.5vh; width: 1.7vw;}
+.p9 { left: 2.4vw; top: 90.6vh; width: 2.2vw;}
+.p10 { left: 17.9vw; top: 90.6vh; width: 2.2vw;}
+
+.shelf {
+    width: 5.4vw;
+    height: 36.1vh;
+    position: absolute;
+}
+
+/* 줄(세로 위치) */
+.top-row    { top: 0; }
+.bottom-row { top: 62.4vh; }
+
+/* 칸(가로 위치) - 위아래 줄이 함께 씀 */
+.col1 { left: 36vw; }
+.col2 { left: 44.4vw; }
+.col3 { left: 52.8vw; }
+.col4 { left: 61.1vw; }
+.col5 { left: 69.5vw; }
+.col6 { left: 77.9vw; }
+.col7 { left: 86.3vw; }
+.col8 { left: 94.6vw; }
+
+.stair {
+    position: absolute;
+}
+
+.st1 { left: 51.4vw; top: 42.6vh; width: 5vw; height: 13.3vh; }
+.st2 { left: 57.5vw; top: 42.6vh; width: 5vw; height: 13.3vh; }
+.st3 { left: 63.8vw; top: 42.6vh; width: 5vw; height: 13.3vh; }
+.st4 { left: 69.5vw; top: 42.6vh; width: 5vw; height: 13.3vh; }
+.st5 { left: 75.7vw; top: 41.3vh; width: 6vw; height: 16.1vh; }
+.st6 { left: 82.5vw; top: 39.6vh; width: 7.5vw; height: 19.3vh; }
+.st7 { left: 90.8vw; top: 38.5vh; width: 9.2vw; height: 21.5vh; }
